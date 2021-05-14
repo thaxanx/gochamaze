@@ -1,0 +1,576 @@
+@charset "utf-8";
+
+
+
+/* ------------------------------------------------------------------- 
+ * ## fonts
+ * ------------------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Kiwi+Maru:wght@300;400;500&family=Noto+Sans:wght@400;700&display=swap');
+
+:root {
+    --font-1: "Itim", "Kiwi Maru", sans-serif;
+    --font-2: "Noto Sans","Kiwi Maru", sans-serif;
+
+    /* monospace */
+    --font-mono: monospace;
+}
+
+
+/* ------------------------------------------------------------------- 
+ * ## colors 
+ * ------------------------------------------------------------------- */
+:root {
+    --color-1: hsla(275, 23%, 28%, 1);
+    --color-2: hsla(13, 90%, 58%, 1);
+    --color-3: #3E3E3E;
+    
+    --color-body: #212529;;
+    --color-blackboard: #114400;
+    --color-bb-frame: #a60;
+}
+
+/* ------------------------------------------------------------------- 
+ * ## basic
+ * ------------------------------------------------------------------- */
+
+:root {
+    font-size: 18px;
+}
+
+body {    
+    font-family: var(--font-1);
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    letter-spacing: .1rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    
+}
+
+li h1, li h2, li h3, li h4, li h5, li h6, li .h1, li .h2, li .h3, li .h4, li .h5, li .h6 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 576px) {
+    :root {
+        font-size: 16px;
+    }
+}
+
+
+/* ------------------------------------------------------------------- 
+ * ## link
+ * ------------------------------------------------------------------- */
+
+a {
+    color: red;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+a:visited {
+    color: purple;
+    text-decoration: none;
+}
+
+a:hover {
+    color: green;
+}
+
+a:active {
+    color: aqua;
+}
+
+a img {
+    border: none;
+}
+
+
+/* ------------------------------------------------------------------- 
+ * ## fade-up
+ * ------------------------------------------------------------------- */
+
+/*アニメーション前*/
+.fade-up {
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all .6s ease-out;
+}
+
+/*トリガー発火で.showを付与しアニメーション*/
+.fade-up.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.show .fade-up {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.show .fade-up:nth-last-child(2) {
+    transition-delay: .4s;
+}
+
+.show .fade-up:nth-last-child(3) {
+    transition-delay: .8s;
+}
+
+.show .fade-up:nth-last-child(4) {
+    transition-delay: 1.2s;
+}
+
+
+/* ------------------------------------------------------------------- 
+ * ## blackboard
+ * ------------------------------------------------------------------- */
+
+.blackboard {
+    color: white;
+    background-color: var(--color-blackboard);
+    border: 9px solid var(--color-bb-frame);
+    border-radius: 5px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5), 2px 5px 10px rgba(0, 0, 0, 0.5) inset;
+}
+
+.point {
+    color: #ffb1b3;
+    font-weight: bold;
+    border: 3px solid #ffb1b3;
+}
+
+
+/* ------------------------------------------------------------------- 
+ * ## chalk line
+ * ------------------------------------------------------------------- */
+
+.chalk-line {
+    padding: 0 1rem 8px 1rem;
+    background-image: url(../images/chalk-line.png);
+    background-position: bottom;
+    background-repeat: repeat-x;
+}
+
+.chalk {
+    color: red;
+    padding-right: 1rem;
+    animation: write 3s infinite both;
+}
+
+@keyframes write {
+  0%,
+  100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+  15% {
+    transform: translateX(-20px) rotate(6deg);
+  }
+  30% {
+    transform: translateX(10px) rotate(-6deg);
+  }
+  45% {
+    transform: translateX(-10px) rotate(3.6deg);
+  }
+  60% {
+    transform: translateX(6px) rotate(-2.4deg);
+  }
+  75% {
+    transform: translateX(-3px) rotate(1.2deg);
+  }
+}
+
+
+/* ------------------------------------------------------------------- 
+ * ## header
+ * ------------------------------------------------------------------- */
+
+#header {
+    background-color: rgba(84, 45, 36, 0.9);
+}
+
+.header-logo img {
+    height: 50px;
+}
+
+.nav-item a {
+    font-size: 1.05rem;
+    transition: all .3s;
+    color: white;
+}
+
+.nav-item a:visited {
+    color: white;
+}
+
+.nav-item a:hover {
+    transform: scale(1.1) rotate(4deg);
+}
+
+.nav-item .active {
+    color: wheat !important;
+    background-color: transparent !important;
+    transform: scale(1.5);
+}
+
+@media screen and (max-width: 768px) {
+    .nav-item .active {
+        color: wheat !important;
+        background-color: transparent !important;
+        transform: scale(1.1);
+    }
+}
+
+
+/* ------------------------------------------------------------------- 
+ * ## home
+ * ------------------------------------------------------------------- */
+
+#home {
+    color: white;
+    background-color: var(--color-blackboard);
+    border: 15px solid var(--color-bb-frame);
+    box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.5), 2px 5px 15px rgba(0, 0, 0, 0.5) inset;
+    height: 1000px;
+    
+}
+
+.home-logo {
+    width: 100%;
+}
+
+.home-logo img {
+    width: 37.5%;
+    max-width: 720px;
+    animation: puff-in-center .7s ease-in-out .3s both;
+}
+
+.home-top-right {
+    width: 100%;
+    top: 25%;
+    left: 84%;
+}
+
+.home-top-right img {
+    width: 25%;
+    max-width: 
+}
+
+@keyframes puff-in-center {
+  0% {
+    transform: scale(2);
+    filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 992px) {
+    .home-logo {
+        top: 75px !important;
+        transform: translateX(-50%) !important;
+    }
+    
+    .home-logo img {
+        width: 60%;
+        
+    }
+}
+
+
+/* ------------------------------------------------------------------- 
+ * ## about
+ * ------------------------------------------------------------------- */
+
+#about {
+    padding: 10rem 0 5rem 0;
+}
+
+#about h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0 0 1.5rem 0;
+}
+
+#about p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0 0 1.2rem 0;
+}
+
+#about li {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--color-blackboard);
+}
+
+@media screen and (max-width: 768px) {
+    #about {
+        padding: 5rem 0 2rem 0;
+    }
+
+}
+
+/* ------------------------------------------------------------------- 
+ * ## event
+ * ------------------------------------------------------------------- */
+
+#event {
+    padding: 10rem 0 5rem 0;
+}
+
+#event h2:before {
+    content: "\f005" ;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    padding-right: 1rem;
+}
+
+#event h2:after {
+    content: "\f005" ;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    padding-left: 1rem;
+}
+
+#event a {
+    color: var(--color-body);
+}
+
+.event-item {
+    transition: all .3s;
+}
+
+.event-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.5)!important;
+}
+
+.event-item h3 {
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    #event {
+        padding: 5rem 0 2rem 0;
+    }
+
+}
+
+/* ------------------------------------------------------------------- 
+ * ## blog
+ * ------------------------------------------------------------------- */
+
+#blog {
+    padding: 10rem 0 5rem 0;
+}
+
+#blog h2:before {
+    content: "\f02e" ;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    padding-right: 1rem;
+}
+
+#blog h2:after {
+    content: "\f02e" ;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    padding-left: 1rem;
+}
+
+
+.blog-item {
+/*    display: block;*/
+    transition: all .3s;
+}
+
+.blog-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.5)!important;
+}
+
+.blog-item h3 {
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    #blog {
+        padding: 5rem 0 2rem 0;
+    }
+
+}
+
+/* ------------------------------------------------------------------- 
+ * ## contact
+ * ------------------------------------------------------------------- */
+
+#contact {
+    padding-top: 10rem;
+}
+
+#contact h2:before {
+    content: "\f1d8" ;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    padding-right: 1rem;
+}
+
+#contact h2:after {
+    content: "\f1d8" ;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    padding-left: 1rem;
+}
+
+.sns {
+    list-style: none;
+    font-size: 5rem;
+}
+
+.sns i {
+    transition: all .4s;
+}
+
+.sns i:hover {
+    transform: scale(1.1) rotate(3deg);
+}
+
+@media screen and (max-width: 768px) {
+    #contact {
+        padding-top: 5rem;
+    }
+
+}
+
+/* ------------------------------------------------------------------- 
+ * ## footer
+ * ------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------- 
+ * ## sidebar
+ * ------------------------------------------------------------------- */
+
+#sidebar {
+    padding: 5rem 0 5rem 6%;
+}
+
+.sidebar-sticky {
+    position: sticky;
+    top: 100px;
+}
+
+.sidebar-item {
+    transition: all .3s;
+}
+
+.sidebar-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.5)!important;
+}
+
+.sidebar-latest-blog p {
+    line-height: 1.1;
+}
+
+@media screen and (max-width: 992px) {
+    #sidebar {
+        padding: 0;
+        margin: 0 0 5rem 0;
+    }
+    
+    .sidebar-latest-blog p {
+        font-size: 1.5rem;
+        line-height: 1.6;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+}
+
+
+/* ------------------------------------------------------------------- 
+ * ## blog content
+ * ------------------------------------------------------------------- */
+
+.blog-content {
+    padding: 5rem 0 5rem 0;
+}
+
+.blog-post {
+    margin-bottom: 4rem;
+    padding: 3rem 0 3rem 0;
+    border-bottom: thick solid #737474;
+}
+
+.blog-post-header {
+    margin: 0 0 3rem 0;
+    padding: 0 3rem 0 3rem;
+    border-bottom: thick solid #737474;
+}
+
+.blog-post-header p {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.blog-post-dete:before {
+    content: "\f303" ;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    padding-right: .5rem;
+}
+
+.blog-post-thumb img {
+    width: 100%;
+}
+
+.blog-post h2 {
+    padding: 0 0 8px 0;
+    background-image: url(../images/chalk-line.png);
+    background-position: bottom;
+    background-repeat: repeat-x;
+}
+
+.blog-post p {
+    font-family: var(--font-2);
+}
+
+
+/* ------------------------------------------------------------------- 
+ * ## post-nav
+ * ------------------------------------------------------------------- */
+
+.post-nav-item {
+    transition: all .3s;
+}
+
+.post-nav-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.5)!important;
+}
+
+
+/* ------------------------------------------------------------------- 
+ * ## post-nav
+ * ------------------------------------------------------------------- */
+
+.event-post-dete:before {
+    content: "\f073" ;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    padding-right: .5rem;
+}
