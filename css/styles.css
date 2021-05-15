@@ -620,30 +620,30 @@ a img {
     
     .home-top-left {
         width: 50%;
-        top: 43%;
-        left: 27%;
-        transform: translate(-50%, -50%)!important;
+        top: 34%;
+        left: 2%;
+        transform: translate(0%, 0%)!important;
     }
     
     .home-top-right {
         width: 45%;
-        top: 60%;
-        left: 75%;
-        transform: translate(-50%, -50%)!important;
+        top: 52%;
+        left: 53%;
+        transform: translate(0%, 0%)!important;
     }
     
     .home-bottom-left {
         width: 45%;
-        top: 74%;
-        left: 28%;
-        transform: translate(-50%, -50%)!important;
+        top: 63%;
+        left: 6%;
+        transform: translate(0%, 0%)!important;
     }
     
     .home-bottom-right {
         width: 55%;
-        top: 89%;
-        left: 73%;
-        transform: translate(-50%, -50%)!important;
+        top: 81%;
+        left: 45%;
+        transform: translate(0%, 0%)!important;
     }
 }
 
