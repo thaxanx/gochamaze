@@ -533,9 +533,9 @@ a img {
 
 /* ----- home-bottom-right ----- */
 .home-bottom-right {
-    width: 35%;
-    top: 75%;
-    left: 81%;
+    width: 32%;
+    top: 73%;
+    left: 83%;
     animation: puff-in-center .7s ease-in-out 1.1s both;
 }
 
