@@ -385,11 +385,9 @@ a img {
 /* ----- home-top-left ----- */
 .home-top-left {
     width: 27%;
-    top: 25%;
-    left: 16%;
-    -webkit-transform: translate(-50%, -50%)!important;
-    -ms-transform: translate(-50%, -50%)!important;
-    transform: translate(-50%, -50%)!important;
+    top: 7%;
+    left: 2%;  
+/*    transform: translate(0%, 0%)!important;*/
     animation: puff-in-center .7s ease-in-out .5s both;
 }
 
@@ -461,11 +459,9 @@ a img {
 /* ----- home-top-right ----- */
 .home-top-right {
     width: 25%;
-    top: 25%;
-    left: 84%;
-    -webkit-transform: translate(-50%, -50%)!important;
-    -ms-transform: translate(-50%, -50%)!important;
-    transform: translate(-50%, -50%)!important;
+    top: 5%;
+    left: 71%;  
+/*    transform: translate(0%, 0%)!important;*/
     animation: puff-in-center .7s ease-in-out .7s both;
 }
 
@@ -485,11 +481,9 @@ a img {
 /* ----- home-bottom-left ----- */
 .home-bottom-left {
     width: 27%;
-    top: 75%;
-    left: 17%;
-    -webkit-transform: translate(-50%, -50%)!important;
-    -ms-transform: translate(-50%, -50%)!important;
-    transform: translate(-50%, -50%)!important;
+    top: 54%;
+    left: 4%;
+/*    transform: translate(0%, 0%)!important;*/
     animation: puff-in-center .7s ease-in-out .9s both;
 }
 
@@ -544,18 +538,16 @@ a img {
 
 /* ----- home-bottom-right ----- */
 .home-bottom-right {
-    width: 32%;
-    top: 73%;
-    left: 83%;
-    -webkit-transform: translate(-50%, -50%)!important;
-    -ms-transform: translate(-50%, -50%)!important;
-    transform: translate(-50%, -50%)!important;
+    width: 33%;
+    top: 50%;
+    left: 66%;  
+/*    transform: translate(0%, 0%)!important;*/
     animation: puff-in-center .7s ease-in-out 1.1s both;
 }
 
 .home-bottom-right img {
     width: 100%;
-    max-width: 600px;
+    max-width: 560px;
     transition: 0.3s;
 /*    box-shadow: 2px 5px 30px rgba(0, 0, 0, 0.5);*/
 }
@@ -590,27 +582,21 @@ a img {
         width: 35%;
         top: 3%;
         left: 5%;
-        -webkit-transform: translate(0%, 0%)!important;
-        -ms-transform: translate(0%, 0%)!important;
-        transform: translate(0%, 0%)!important;
+/*        transform: translate(0%, 0%)!important;*/
     }
     
     .home-top-right {
         width: 37%;
         top: 3%;
         left: 60%;
-        -webkit-transform: translate(0%, 0%)!important;
-        -ms-transform: translate(0%, 0%)!important;
-        transform: translate(0%, 0%)!important;
+/*        transform: translate(0%, 0%)!important;*/
     }
     
     .home-bottom-left {
         width: 33%;
         top: 60%;
         left: 5%;
-        -webkit-transform: translate(0%, 0%)!important;
-        -ms-transform: translate(0%, 0%)!important;
-        transform: translate(0%, 0%)!important;
+/*        transform: translate(0%, 0%)!important;*/
     }
     
     .tape:before {
@@ -627,9 +613,7 @@ a img {
         width: 46%;
         top: 62%;
         left: 53%;
-        -webkit-transform: translate(0%, 0%)!important;
-        -ms-transform: translate(0%, 0%)!important;
-        transform: translate(0%, 0%)!important;
+/*        transform: translate(0%, 0%)!important;*/
     }
 }
 
@@ -637,8 +621,6 @@ a img {
     .home-logo {
         width: 75%;
         top: 75px !important;
-        -webkit-transform: translate(0%, 0%)!important;
-        -ms-transform: translate(0%, 0%)!important;
         transform: translateX(-50%) !important;
     }
     
@@ -646,36 +628,28 @@ a img {
         width: 50%;
         top: 34%;
         left: 2%;
-        -webkit-transform: translate(0%, 0%)!important;
-        -ms-transform: translate(0%, 0%)!important;
-        transform: translate(0%, 0%)!important;
+/*        transform: translate(0%, 0%)!important;*/
     }
     
     .home-top-right {
         width: 45%;
         top: 52%;
         left: 53%;
-        -webkit-transform: translate(0%, 0%)!important;
-        -ms-transform: translate(0%, 0%)!important;
-        transform: translate(0%, 0%)!important;
+/*        transform: translate(0%, 0%)!important;*/
     }
     
     .home-bottom-left {
         width: 45%;
         top: 63%;
         left: 6%;
-        -webkit-transform: translate(0%, 0%)!important;
-        -ms-transform: translate(0%, 0%)!important;
-        transform: translate(0%, 0%)!important;
+/*        transform: translate(0%, 0%)!important;*/
     }
     
     .home-bottom-right {
         width: 55%;
         top: 81%;
         left: 45%;
-        -webkit-transform: translate(0%, 0%)!important;
-        -ms-transform: translate(0%, 0%)!important;
-        transform: translate(0%, 0%)!important;
+/*        transform: translate(0%, 0%)!important;*/
     }
 }
 
