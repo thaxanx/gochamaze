@@ -951,6 +951,13 @@ a img {
 
 .blog-post img {
     width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.text-red {
+    color: red;
+    font-weight: bold;
 }
 
 
