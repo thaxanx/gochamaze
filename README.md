@@ -1,1 +1,1 @@
-# Gochamaze Project !
+# ごちゃまぜプロジェクトのWebサイトです。
