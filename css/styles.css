@@ -858,6 +858,14 @@ a img {
     
 }
 
+.footer-logo {
+    margin-bottom: 1.5rem;
+}
+
+.footer-logo img {
+    height: 5rem;
+}
+
 
 /* ------------------------------------------------------------------- 
  * ## sidebar
